@@ -7,4 +7,7 @@ describe("reverseString(word)", () => {
 		const word = "fun";
 		expect(reverseString(word)).to.equal("nuf");
 	});
+	it("should throw an error when given a non-string", () => {
+		expect(()=>reverseString(2)).to.throw(TypeError);
+	})
 });
