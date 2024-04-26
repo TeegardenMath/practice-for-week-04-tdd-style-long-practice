@@ -9,5 +9,12 @@ describe("returnsThree()", () => {
 });
 
 describe("reciprocal(n)", () => {
+	it ("should find terminating inverses of positive integers", () => {
+		expect(reciprocal(2)).to.equal(0.5);
+		expect(reciprocal(5)).to.equal(0.2);
+	});
+	it ("should find non-terminating inverses of positive integers", () => {
+		expect(reciprocal(3)).to.equal(1/3);
+	})
 
 });
